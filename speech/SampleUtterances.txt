@@ -1,0 +1,31 @@
+randomCardIntent read a random card
+randomCardIntent read me a random card
+randomCardIntent pick a random card
+randomCardIntent pick me a random card
+randomCardIntent a random card
+
+cardLookupIntent what does {Llanowar Elves|Name} do
+cardLookupIntent lookup {Wrath of God|Name}
+cardLookupIntent find {Lightning Bolt|Name}
+cardLookupIntent search {Phyrexian Dreadnought|Name}
+
+cardAttributeIntent a {Creature|Type} card
+cardAttributeIntent a {Sorcery|Type} card
+cardAttributeIntent a {Enchantment|Type} card
+cardAttributeIntent a {Land|Type} card
+cardAttributeIntent a {Instant|Type} card
+cardAttributeIntent a {Artifact|Type} card
+cardAttributeIntent a {Planeswalker|Type} card
+
+cardAttributeIntent a {Green|Color} {Creature|Type}
+cardAttributeIntent a {Red|Color} {Sorcery|Type} 
+cardAttributeIntent a {Blue|Color} {Enchantment|Type}
+cardAttributeIntent a {White|Color} {Instant|Type}
+cardAttributeIntent a {Green|Color} {Planeswalker|Type}
+cardAttributeIntent a {Red|Color} {Artifact|Type}
+cardAttributeIntent a {Colorless|Color} {Artifact|Type}
+
+cardAttributeIntent a card that costs {Two|Cmc}
+cardAttributeIntent a card that costs {Three|Cmc}
+cardAttributeIntent a {Creature|Type} that costs {One|Cmc}
+cardAttributeIntent a {Red|Color} {Creature|Type} that costs {Five|Cmc}

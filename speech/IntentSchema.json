@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "randomCardIntent",
+      "slots": []
+    },
+    {
+      "intent": "cardLookupIntent",
+      "slots": [
+        {
+          "name": "Name",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "cardAttributeIntent",
+      "slots": [
+        {
+          "name": "Type",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Color",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Cmc",
+          "type": "NUMBER"
+        }
+      ]
+    }
+  ]
+}
