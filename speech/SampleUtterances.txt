@@ -8,6 +8,7 @@ cardLookupIntent what does {Llanowar Elves|Name} do
 cardLookupIntent lookup {Wrath of God|Name}
 cardLookupIntent find {Lightning Bolt|Name}
 cardLookupIntent search {Phyrexian Dreadnought|Name}
+cardLookupIntent about {Squirrel Nest|Name}
 
 cardAttributeIntent a {Creature|Type} card
 cardAttributeIntent a {Sorcery|Type} card

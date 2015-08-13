@@ -14,8 +14,8 @@ var cardsByName = _.indexBy(cards, function (card) {
 });
 
 var skillContext = {
-	cardsByName: cardsByName,
-	cards: cards,
+    cardsByName: cardsByName,
+    cards: cards,
 };
 
 var Magic = function () {

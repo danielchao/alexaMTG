@@ -6,19 +6,24 @@ var registerIntentHandlers = function (intentHandlers, skillContext) {
         cardsByName = skillContext.cardsByName;
 
     intentHandlers.randomCardIntent = function (intent, session, response) {
-        var card =  randomCard(cards);
-        response.tell(cardString(card));
+        var card = randomCard(cards);
+        var description = cardString(card);
+        response.tellWithCard(description, card.name, description);
     };
     intentHandlers.cardLookupIntent = function (intent, session, response) {
         var query = intent.slots.Name.value.toLowerCase();
+        var card, description;
         console.log("Looking up " + query);
         if (cardsByName[query]) {
-            response.tell(cardString(cardsByName[query]));
+            card = cardsByName[query];
+            description = cardString(card);
+            response.tellWithCard(description, card.name, description);
         } else {
-            var likelyMatch = _.min(cardsByName, function (card, name) { 
+            card = _.min(cardsByName, function (card, name) { 
                 return s.levenshtein(name, query);
             });
-            response.tell(cardString(likelyMatch));
+            description = cardString(card);
+            response.tellWithCard(description, card.name, description);
         }
     };
     intentHandlers.cardAttributeIntent = function (intent, session, response) {
@@ -49,7 +54,8 @@ var registerIntentHandlers = function (intentHandlers, skillContext) {
         if (!validCards.length) {
             response.tell('Unable to find such a card');
         } else {
-            response.tell(randomCard(validCards).name);
+            var card = randomCard(validCards);
+            response.tellWithCard(card.name, card.name, cardString(card));
         }
     };
 };
