@@ -26,7 +26,19 @@ cardAttributeIntent a {Green|Color} {Planeswalker|Type}
 cardAttributeIntent a {Red|Color} {Artifact|Type}
 cardAttributeIntent a {Colorless|Color} {Artifact|Type}
 
+cardAttributeIntent a card that costs {Zero|Cmc}
 cardAttributeIntent a card that costs {Two|Cmc}
 cardAttributeIntent a card that costs {Three|Cmc}
 cardAttributeIntent a {Creature|Type} that costs {One|Cmc}
 cardAttributeIntent a {Red|Color} {Creature|Type} that costs {Five|Cmc}
+cardAttributeIntent a {Black|Color} {Enchantment|Type} that costs {Six|Cmc}
+cardAttributeIntent a {White|Color} {Artifact|Type} that costs {Seven|Cmc}
+cardAttributeIntent a {Green|Color} {Sorcery|Type} that costs {Nine|Cmc}
+cardAttributeIntent a {Blue|Color} {Instant|Type} that costs {Ten|Cmc}
+
+cardAttributeIntent a {Green|Color} card that costs {One|Cmc}
+cardAttributeIntent a {Red|Color} card that costs {Two|Cmc}
+cardAttributeIntent a {White|Color} card that costs {Three|Cmc}
+cardAttributeIntent a {Blue|Color} card that costs {Four|Cmc}
+cardAttributeIntent a {Black|Color} card that costs {Five|Cmc}
+

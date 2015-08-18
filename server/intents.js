@@ -43,7 +43,7 @@ var registerIntentHandlers = function (intentHandlers, skillContext) {
                     valid = false;
                 }
             }
-            if (cmc && card.cmc !== cmc) {
+            if (_.isFinite(cmc) && card.cmc !== cmc) {
                 valid = false;
             }
             if (type && !_.contains(card.types? card.types: [], type)) {
@@ -61,7 +61,7 @@ var registerIntentHandlers = function (intentHandlers, skillContext) {
 };
 
 function randomCard (cards) {
-    return cards[_.random(0, cards.length)];
+    return cards[_.random(0, cards.length - 1)];
 }
 
 function cardString (card) {
